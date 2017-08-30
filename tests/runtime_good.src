@@ -1,0 +1,79 @@
+program codegen_test is
+
+    integer testint;
+
+    string teststring;
+    string teststring2;
+    string teststring3;
+
+    bool testbool;
+    float testfloat;
+
+    procedure increment (integer val in, integer result out)
+    begin
+        result := val + 1;
+    end procedure;
+
+begin
+
+    ////////////////////////////////////////////
+    // INTEGER TEST
+
+    //testint := 0;
+    //increment(41, testint);
+
+    //putString("41 plus 1 is...");
+    //putInteger(testint);
+
+    //putString("Enter an integer");
+    //getInteger(testint);
+    //putString("You entered...");
+    //putInteger(testint);
+
+    ////////////////////////////////////////////
+    // BOOL TEST
+
+    //putString("Enter a boolean value 0 or 1");
+    //getBool(testbool);
+    //putString("You entered...");
+    //putBool(testbool);
+
+    ////////////////////////////////////////////
+    // FLOAT TEST
+
+    //testfloat := 4.5;
+    //putFloat(testfloat);
+    //putFloat(1414.1414);
+
+    //putString("Enter a float");
+    //getFloat(testfloat);
+    //putString("You entered...");
+    //putFloat(testfloat);
+
+    ////////////////////////////////////////////
+    // STRING TEST
+
+    putString("Enter a string");
+    getString(teststring);
+    putString("You entered...");
+    putString(teststring);
+
+    putString("Enter a string");
+    getString(teststring2);
+    putString("You entered...");
+    putString(teststring2);
+
+    putString("Enter a string");
+    getString(teststring3);
+    putString("You entered...");
+    putString(teststring3);
+
+    putString("This is the first string");
+    putString(teststring);
+
+    putString("This is the second string");
+    putString(teststring2);
+
+    putString("This is the third string");
+    putString(teststring3);
+end program
